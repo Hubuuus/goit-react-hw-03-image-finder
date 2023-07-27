@@ -50,7 +50,7 @@ class App extends Component {
               behavior: "smooth",
             });
         }
-      }, 300);
+      }, 500);
     }
   };
 
