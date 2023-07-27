@@ -1,11 +1,3 @@
-/* body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-} */
-
 html {
   box-sizing: border-box;
   width: 100vw;
@@ -35,7 +27,7 @@ img {
 }
 
 /*
- * Стили компонента App
+ App
  */
 .App {
   display: grid;
@@ -45,7 +37,7 @@ img {
 }
 
 /*
- * Стили компонента Searchbar
+  Searchbar
  */
 .Searchbar {
   top: 0;
@@ -67,7 +59,7 @@ img {
 }
 
 /*
- * Стили компонента SearchForm
+ SearchForm
  */
 .SearchForm {
   display: flex;
@@ -127,7 +119,7 @@ img {
 }
 
 /*
- * Стили компонента ImageGallery
+  ImageGallery
  */
 .ImageGallery {
   display: grid;
@@ -143,7 +135,7 @@ img {
 }
 
 /*
- * Стили компонента ImageGalleryItem
+  ImageGalleryItem
  */
 .ImageGalleryItem {
   border-radius: 2px;
@@ -164,7 +156,7 @@ img {
 }
 
 /*
- * Стили компонента Modal
+ Modal
  */
 
 .Overlay {
@@ -186,7 +178,7 @@ img {
 }
 
 /*
-* Стили компонента Buton (Load more)
+Buton (Load more)
 */
 .Button {
   padding: 8px 16px;
@@ -212,4 +204,8 @@ img {
 .Button:hover,
 .Button:focus {
   background-color: #303f9f;
+}
+
+.Loader {
+  margin: auto;
 }
