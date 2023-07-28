@@ -20,18 +20,15 @@ class App extends Component {
 
   searchValue = evt => {
     evt.preventDefault();
-    //Przechwytywanie wartości inputu
     const searchValue = evt.target.name.value;
     this.setState({ query: searchValue, page: 1 });
   };
 
   loadMore = () => {
-    // console.log("Loading more...");
     this.setState(prevState => ({ page: prevState.page + 1 }));
   };
 
   getApi = async (query, page) => {
-    // console.log("Search now:", query, "|in page:", page);
     this.setState({ isLoading: true });
     try {
       const pictures = await api.fetchGalleryWithQuery(query, page);
@@ -60,7 +57,6 @@ class App extends Component {
 
   closeModal = () => {
     this.setState({ modalIsOpen: false, bigFormatUrl: "" });
-    // console.log("Modal is close");
   };
 
   closeModalEsc = evt => {
